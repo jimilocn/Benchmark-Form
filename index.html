@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Benchmark Analytics : Data-driven technology to support law enforcement</title>
+    <style>
+
+        body{
+            background-color: rgba(0, 75, 100, 0.048);
+        }
+        .sitelogo {
+            max-width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+            color: #32998e;
+        }
+
+        .ifyes {
+            font-weight: initial;
+            color: #134584;
+        }
+
+        .form-check-label {
+            color: rgb(117, 117, 117);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <div class="row mt-4">
+            <div class="col">
+                <img src="https://www.benchmarkanalytics.com/wp-content/uploads/2019/05/Benchmark-Logo.png"
+                    alt="site logo" class="sitelogo">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col"> 
+                <p>Report form for Incidents</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil deleniti error ipsum, reiciendis enim repellendus ipsam, quam nam hic veritatis, facilis rerum. Nobis voluptatum unde illum eaque, illo quas!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4 mb-4">
+                <h1>Submitting Officer's Information</h1>
+            </div>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputOfficerFirstName">Officer's First Name</label>
+                    <input type="text" class="form-control" id="inputOfficerFirstName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputOfficerLastName">Last Name</label>
+                    <input type="text" class="form-control" id="inputOfficerLastName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputOfficerPhoneNumber">Officer's Phone Number</label>
+                    <input type="number" class="form-control" id="inputOfficerPhoneNumber">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputOficerSupervisor">Officer's Supervisor</label>
+                    <input type="text" class="form-control" id="inputOficerSupervisor">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label for="inputAnotherOfficer">Was Another Officer Involved?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AnotherOfficer" id="AnotherOfficerYes"
+                                value="AnotherOfficerYes">
+                            <label class="form-check-label" for="AnotherOfficerYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AnotherOfficer" id="AnotherOfficerNo"
+                                value="AnotherOfficerNo">
+                            <label class="form-check-label" for="AnotherOfficerNo">No</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="form-group">
+                <label for="inputAnotherOfficerName" class="ifyes">If "yes," then what was the officer's name?</label>
+                <input type="text" class="form-control" id="inputAnotherOfficerName">
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col mt-4 mb-4">
+                <h1>Incident Information</h1>
+            </div>
+        </div>
+        <form>
+            <div class="form-row">
+
+                <div class="form-group col-md-3">
+                    <label for="inputIncidentDate">Date of Incident</label>
+                    <input type="date" class="form-control" id="inputIncidentDate" placeholder="MM/DD/YYYY">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputIncidentTime">Time of Incident</label>
+                    <input type="time" class="form-control" id="inputIncidentTime" placeholder="24:00">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCaseNumber">Case Number</label>
+                    <input type="number" class="form-control" id="inputCaseNumber" placeholder="###">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputReportNumber">Report Number</label>
+                    <input type="number" class="form-control" id="inputReportNumber" placeholder="###">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>IL</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reasonForInitial">Reason for Initial Contact</label>
+                <textarea class="form-control" id="reasonForInitial" rows="3"></textarea>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col mt-4 mb-4">
+                <h1>Subject Information</h1>
+            </div>
+        </div>
+
+        <form>
+
+            <div class="row">
+                <div class="form-group col">
+                    <label for="inputGender">Gender</label>
+                    <select id="inputGender" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="inputBuild">Build</label>
+                    <select id="inputBuild" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Thin</option>
+                        <option>Average</option>
+                        <option>Muscular</option>
+                        <option>Overweight</option>
+                    </select>
+                </div>
+
+                <div class="form-group col">
+                    <label for="inputHeight">Height</label>
+                    <select id="inputHeight" class="form-control">
+                        <option selected>Feet and Inches...</option>
+                        <option>5'</option>
+                        <option>5'6"</option>
+                        <option>6'</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="inputWeight">Weight</label>
+                    <select id="inputWeight" class="form-control">
+                        <option selected>Lbs...</option>
+                        <option>100 lbs</option>
+                        <option>150 lbs</option>
+                        <option>200 lbs</option>
+                        <option>250 lbs</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <hr class="mt-4">
+            
+
+            <div class="form-group">
+                <div class="row mt-4">
+                    <div class="form-group col-md-6">
+                        <label for="inputArmed">Was the subject armed?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inputArmed" id="inputArmedYes"
+                                value="inputArmedYes">
+                            <label class="form-check-label" for="inputArmedYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inputArmed" id="inputArmedNo"
+                                value="inputArmedNo">
+                            <label class="form-check-label" for="inputArmedNo">No</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="inputTypeOfArm" class="ifyes">If "yes," please describe the item?</label>
+                <input type="text" class="form-control" id="inputTypeOfArm" placeholder="ex: Wooden baseball bat">
+            </div>
+
+            <hr class="mt-4">
+
+
+            <div class="form-group">
+                <div class="row mt-4">
+                    <div class="form-group col-md-6">
+                        <label for="inputApplyForce">Did the officer apply force?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ApplyForce" id="ApplyForceYes"
+                                value="ApplyForceYes">
+                            <label class="form-check-label" for="ApplyForceYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ApplyForce" id="ApplyForceNo"
+                                value="ApplyForceNo">
+                            <label class="form-check-label" for="ApplyForceNo">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="inputTypeOfForce" class="ifyes">If "yes," please describe what and where?</label>
+                <input type="text" class="form-control" id="inputTypeOfForce"
+                    placeholder="ex: Forced subject to ground">
+            </div>
+
+            <hr class="mt-4">
+
+
+            <div class="form-group">
+                <div class="row mt-4">
+                    <div class="form-group col-md-6">
+                        <label for="inputResist">Did the subject resist arrest?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Resist" id="ResistYes"
+                                value="ResistYes">
+                            <label class="form-check-label" for="ResistYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Resist" id="ResistNo"
+                                value="ResistNo">
+                            <label class="form-check-label" for="ResistNo">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="inputTypeOfResist" class="ifyes">If "yes," please describe how?</label>
+                <input type="text" class="form-control" id="inputTypeOfResist" placeholder="ex: started running away">
+            </div>
+
+            <hr class="mt-4">
+
+
+            <div class="form-group">
+                <div class="row mt-4">
+                    <div class="form-group col-md-6">
+                        <label for="inputMedicalTreatment">Was medical treatment sought after the incident?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="MedicalTreatment" id="MedicalTreatmentYes"
+                                value="MedicalTreatmentYes">
+                            <label class="form-check-label" for="MedicalTreatmentYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="MedicalTreatment" id="MedicalTreatmentNo"
+                                value="MedicalTreatmentNo">
+                            <label class="form-check-label" for="MedicalTreatmentNo">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="inputTypeOfMedical" class="ifyes">If "yes," please describe what?</label>
+                <input type="text" class="form-control" id="inputTypeOfMedical"
+                    placeholder="ex: emergency room visit for wounds">
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col mt-4 mb-4">
+                <h1>Incident Story</h1>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="interactions">Interactions between subject and officer</label>
+                <textarea class="form-control" id="interactions" rows="3"></textarea>
+            </div>
+
+        </form>
+
+        <div class="row">
+            <div class="col mt-4 mb-4">
+                <h1>Additional Subject Information (if available)</h1>
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="inputOccupation">Occupation</label>
+                <input type="text" class="form-control" id="inputOccupation" placeholder="ex: dentist">
+            </div>
+            <div class="form-group">
+                <label for="inputCharges">Previous Charges</label>
+                <input type="text" class="form-control" id="inputCharges" placeholder="ex: felony">
+            </div>
+            <div class="form-group">
+                <label for="inputTransport">Transported by</label>
+                <input type="text" class="form-control" id="inputTransport" placeholder="ex: bike">
+            </div>
+            <div class="form-group">
+                <label for="inputBirthday">Birthday</label>
+                <input type="text" class="form-control" id="inputBirthday" placeholder="MM/DD/YYYY">
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col mt-4 mb-4">
+                <h1>Additional Incident Information (if available)</h1>
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="inputWeather">Weather during incident</label>
+                <input type="text" class="form-control" id="inputWeather" placeholder="ex: Sunny">
+            </div>
+            <div class="form-group">
+                <label for="inputWitness">Witnesses present</label>
+                <input type="text" class="form-control" id="inputWitness" placeholder="Provide names">
+            </div>
+
+        </form>
+
+
+
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <footer class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <img src="https://www.benchmarkanalytics.com/wp-content/uploads/2019/05/Benchmark-Logo.png"
+                        alt="site logo" class="sitelogo">
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+        </footer>
+
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
